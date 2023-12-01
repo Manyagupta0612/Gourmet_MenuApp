@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+            <!-- <img src="pexels-igor-starkov-1307698.jpg" alt="" class="img1"> -->
+            <h2 class="heading1">GOURMET</h2>
+        <nav class="navbar">
+            <a href="#">MENU</a>
+            <a href="">LOCATION</a>
+            <a href="">CATERING</a>
+            <a href="">MEMBERSHIP</a>
+            <a href="">GIFT CARDS</a>
+            <a href="">ABOUT</a>
+            <a href="">ORDER ONLINE</a>
+        </nav>
+
+            <h1 class="mid">𝒲𝑒𝓁𝒸𝑜𝓂𝑒</h1>
+            <p class="mid1">𝑾𝑬 𝑪𝑶𝑶𝑲𝑬𝑫 𝒀𝑶𝑼𝑹 𝑫𝑬𝑺𝑰𝑹𝑬𝑫 𝑭𝑶𝑶𝑫</p>
+            <h3 class="mid2"> <i> A small river named duden flows by their place and supplies it <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with the necessary regelialia </i></h3>
+            <div class="btns">
+                <button class="btn1">Order Now</button>
+                <button class="btn2">View Menu</button>
+            </div>
+
+        </div>
+
+            <!-- <h1>MENU</h1>
+            <div class="menu">
+                <form>
+                    <label for="Name">Name:</label>
+                    <input type="text" id="itemName" name="itemName" required>
+                    <label for="itemPrice">Item Price:</label>
+                    <input type="number" id="itemPrice" name="itemPrice" required>
+                </form>
+            </div> -->
+<div>
+            <form>
+                <h1>Add an Item</h1>
+                <div class="me">
+
+                <label for="itemName">Name:</label>
+                <input type="text" id="itemName" name="name" required>
+        
+                <label for="description">Description:</label>
+                <textarea id="itemDescription" name="description" required></textarea>
+        
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="itemIngredients" name="ingredients" required></textarea>
+        
+                <label for="price">Price:</label>
+                <input type="text" id="itemPrice" name="price" required>
+        
+                <label for="category">Category:</label>
+                <input type="text" id="itemCategory" name="category" required>
+        
+                <button id="addbtn" type="button" onclick="addItem()">Add Item</button>&nbsp;&nbsp;
+            </div>
+            </form>
+        </div>
+
+
+        <div>
+            <form>
+                <h1>Update an Item</h1>
+                <div class="me">
+                <label for="itemId">ID:</label>
+                <input type="text" id="itemId" name="name" required>
+
+                <label for="itemName2">Name:</label>
+                <input type="text" id="itemName2" name="name" required>
+        
+                <label for="description">Description:</label>
+                <textarea id="itemDescription2" name="description" required></textarea>
+        
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="itemIngredients2" name="ingredients" required></textarea>
+        
+                <label for="price">Price:</label>
+                <input type="text" id="itemPrice2" name="price" required>
+        
+                <label for="category">Category:</label>
+                <input type="text" id="itemCategory2" name="category" required>
+        
+                <!-- <button type="button" class="add" style="padding: 16px;">Add Item</button> -->
+                <button type="button"  id="addbtn1" onclick="updateItem()">Update Items</button>&nbsp;&nbsp;
+                <button type="reset" id="addbtn1">Clear</button>
+            </div>
+            </form>
+        </div>
+
+        <div>
+            <form>
+                <h1>View Items</h1>
+                <button type="button" class="viewbtn" onclick="viewAllItems()">View all items</button>
+                <label for="itemCategory3" class="catg">Enter Category:</label>
+                <input type="text" id="itemCategory3" class="box" name="itemCategory3" required>
+                <button type="button" class="btns1"  onclick="viewCategoryItems()">View items by category</button>
+                <button type="button" class="btns2" onclick="clear()">Clear</button>
+            </form>
+        </div>
+
+        <div>
+            <form>
+                <h1>Delete Items</h1>
+                <label for="itemId4" class="delid">Enter Id:</label>
+                <input type="text" id="itemId4" name="itemId4" required>
+                <br>
+                <button type="button"  class="btn3" onclick="delItem()">Delete Item</button>&nbsp;&nbsp;
+                <button type="reset" class="btn4">Clear</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
